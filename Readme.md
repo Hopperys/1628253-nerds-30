@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Иван Бойко](https://up.htmlacademy.ru/htmlcss/30/user/1628253).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
