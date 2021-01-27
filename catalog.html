@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Нёрдс</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="img/icons/icon.svg" type="image/svg+×ml">
+        <link rel="apple-touch-icon" href="img/icons/180.png">
+        <link rel="manifest" href="manifest.webmanifest">
+      </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="/index.html"><img src="img/logo.svg" width="160" height="66" alt="Логотип сайта"></a>
+                <ul>
+                    <li><a href="#">Студия</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="/catalog.html">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#">Корзина</a>
+            </nav>    
+        </header>
+        <main>
+            <h1>Магазин готовых шаблонов</h1>            
+            <section class="filter">                
+                <form method="get" action="https://echo.htmlacademy.ru">
+                  <fieldset>
+                    <legend>Стоимость:</legend>
+                     <input type="range" min="0" max="15000" step="100" name="filter-cost" id="filter-cost">
+                     <label for="cost-from">От</label> 
+                     <input type="text" name="cost-from" id="cost-from" placeholder="0"> 
+                     <label for="cost-to">До</label> 
+                     <input type="text" name="cost-to" id="cost-to" placeholder="15000"></p>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                      <li>
+                        <input type="radio" name="grid" value="responsive" id="filter-responsive" checked>
+                        <label for="filter-responsive">Адаптивная</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="grid" value="fixed" id="filter-fixed">
+                        <label for="filter-fixed">Фиксированная</label>
+                      </li>
+                      <li>
+                        <input type="radio" name="grid" value="fluid" id="filter-fluid">
+                        <label for="filter-fluid">Резиновая</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="features" value="slider" id="filter-slider" checked>
+                        <label for="filter-slider">Слайдер</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="features" value="advantages" id="filter-advantages">
+                        <label for="filter-advantages">Блок преимуществ</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="features" value="news" id="filter-news" checked>
+                        <label for="filter-news">Новости</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="features" value="gallery" id="filter-gallery">
+                        <label for="filter-gallery">Галлерея</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="features" value="cart" id="filter-cart">
+                        <label for="filter-cart">Корзина</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <button type="submit" class="btn btn-grey">Показать</button>
+                </form>
+              </section>
+              <section class="sorting">
+                <h3>Сортировать:</h3>
+                <ul>
+                  <li><a href="#">по цене</a></li>
+                  <li><a href="#">по типу</a></li>
+                  <li><a href="#">по названию</a></li>
+                </ul>
+              </section>
+              <section class="shop">
+                <h2>Готовые шаблоны:</h2>
+                <ul>
+                  <li class="shop-model">
+                    <img src="img/models/sedona-web.jpg" width="358" height="578" alt="Туристический сайт Седона">
+                    <p class="hidden">
+                      <a href="#">Sedona</a>
+                      Информационный сайт для туристов
+                      <button type="button" class="btn btn-red">9 900 ₽</button>
+                    </p>
+                  </li>
+                  <li class="shop-model">
+                    <img src="img/models/pink-web.jpg" width="358" height="578" alt="Приложения Pink">
+                    <p class="hidden">
+                      <a href="#">Pink App</a>
+                      Продуктовый лендинг для iOS и Android
+                      <button type="button" class="btn btn-red">9 900 ₽</button>
+                    </p>
+                  </li>
+                  <li class="shop-model">                    
+                    <img src="img/models/borodinski-web.jpg" width="358" height="578" alt="Барбершоп Borodinski">
+                    <p class="hidden">
+                      <a href="#">Barbershop</a>
+                      Сайст салона красоты. Для мужчин, да.
+                      <button type="button" class="btn btn-red">9 900 ₽</button>
+                    </p>
+                  </li>
+                  <li class="shop-model">
+                    <img src="img/models/mishka-web.jpg" width="358" height="578" alt="Магазин Mishka">
+                    <p class="hidden">
+                      <a href="#">Mishka</a>
+                      Интернет-магазин вязаных игрушек
+                      <button type="button" class="btn btn-red">9 900 ₽</button>
+                    </p>
+                  </li>
+                  <li class="shop-model">
+                    <img src="img/models/aplus-web.jpg" width="358" height="578" alt="Академия Aplus">
+                    <p class="hidden">
+                      <a href="#">A plus</a>
+                      Лендинг курсов повышения квалификации
+                      <button type="button" class="btn btn-red">9 900 ₽</button>
+                    </p>
+                  </li>
+                  <li class="shop-model">
+                    <img src="img/models/kvast-web.jpg" width="358" height="578" alt="Крафтовый квас Kvast">
+                    <p class="hidden">
+                      <a href="#">Кваст</a>
+                      Промо-сайт производителя крафтового кваса
+                      <button type="button" class="btn btn-red">9 900 ₽</button>
+                    </p>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a>1</a>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-grey">Следующая</a>
+                  </li>
+                </ul>
+              </section>
+        </main>
+        <footer>
+          <img src="img/map.jpg" width="1440" height="416"  alt="Мы на карте города">        
+          <h3>NЁRDS DESIGN STUDIO</h3>   
+          <address>   
+            191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
+            тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+            <a href="#" class="btn btn-red">Напишите нам</a>
+          </address>        
+          <section class="footer-contacts">
+            <ul>
+              <li><a href="#">Вконтакте</a></li>
+              <li><a href="#">Фейсбук</a></li>
+              <li><a href="#">Инстаграм</a></li>
+            </ul>
+            <p>Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </section>
+        </footer>
+    </body>
