@@ -68,6 +68,7 @@ img {
     width: 1160px;
     margin: 0 auto;
     padding-top: 50px;
+    margin-bottom: 0;
 }
 
 .information {
@@ -151,21 +152,18 @@ img {
 /* Body */
 /* Slider */
 
-.slider {
-    height: 431px;    
-    overflow: hidden;
+.slider {    
+    background-color: var(--light-grey);
+    margin-top: 0;
     margin-bottom: 80px;
-    background-color: var(--light-grey); 
 }
 
 .slide-one {
     background-image: url("../img/slider-bg1.png");    
     background-repeat: no-repeat;
-    background-position: 397px 0px;
-    height: 431px;
+    background-position: right bottom;    
     width: 1160px;
-    margin: 0 auto;
-    padding: 0 0px;    
+    margin: 0 auto;   
 }
 
 .slider-title {
@@ -173,6 +171,7 @@ img {
     font-size: 55px;
     line-height: 55px;
     color: var(--basic-black);
+    margin-top: 0;
 }
 
 /* Buttons */
@@ -396,6 +395,7 @@ img {
     font-size: 36px;
     line-height: 36px;
     color: var(--basic-black);
+    margin-top: 0;
 }
 
 .footer-subtitle {
