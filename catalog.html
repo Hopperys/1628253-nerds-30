@@ -14,23 +14,25 @@
     <body class="page-body">
       <header class="main-header">
         <nav class="navbar">
-          <a class="navbar-logo" href="index.html">
-            <img class="logo-img" src="img/logo.svg" width="160" height="66" alt="Логотип сайта"></a>
-          <div class="container">
-            <ul class="clear-list navbar-list">
+          <div class="navbar-wrap"> 
+            <a class="navbar-logo" href="index.html">
+              <img class="logo-img" src="img/logo.svg" width="160" height="66" alt="Логотип сайта">
+            </a>              
+            <ul class="navbar-list clear-list">
               <li><a class="navbar-link" href="#">Студия</a></li>
               <li><a class="navbar-link" href="#">Клиенты</a></li>
               <li><a class="navbar-link">Магазин</a></li>
               <li><a class="navbar-link" href="#">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="navbar-cart">
-            <a href="#" class="navbar-link navbar-cartlink">Корзина</a>
-          </div>
-        </nav>    
+            </ul>        
+            <div class="navbar-cart">
+              <a href="#" class="navbar-link navbar-cartlink">Корзина</a>
+            </div>
+          </div> 
+        </nav>  
       </header>
-      <main class="container">
-        <h1 class="main-title">Магазин готовых шаблонов</h1>                      
+      <main class="page-catalog">
+        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+        <div class="container catalog-wrap">                   
           <section class="filter">                
             <form method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter-cost filter-fieldset">
@@ -92,15 +94,13 @@
               <li class="sortink-item"><a class="sorting-link" href="#">по цене</a></li>
               <li class="sortink-item"><a class="sorting-link" href="#">по типу</a></li>
               <li class="sortink-item"><a class="sorting-link" href="#">по названию</a></li>
-              <li>
-                <a href="#">
+              <li class="sortink-item">
+                <a href="#" class="sorting-down">
                   <svg class="sorting-svg" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0H11"/>
                   </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
+                </a>              
+                <a href="#" class="sorting-up">
                   <svg class="sorting-svg" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g>
                       <path d="M5.5 0L0 10H11L5.5 0Z"/>
@@ -119,11 +119,11 @@
                   </g>
                 </svg>
                 <img src="img/models/sedona-web.jpg" width="358" height="578" alt="Туристический сайт Седона">
-                <p class="hidden">
+                <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Sedona</a>
                   <span class="hidden-desc">Информационный сайт для туристов</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
-                </p>
+                </div>
               </li>
               <li class="catalog-item">
                 <svg class="catalog-svg" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,11 +132,11 @@
                   </g>
                 </svg>
                 <img src="img/models/pink-web.jpg" width="358" height="578" alt="Приложения Pink">
-                <p class="hidden">
+                <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Pink App</a>
                   <span class="hidden-desc">Продуктовый лендинг для iOS и Android</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
-                </p>
+                </div>
               </li>
               <li class="catalog-item"> 
                 <svg class="catalog-svg" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,11 +145,11 @@
                   </g>
                 </svg>                   
                 <img src="img/models/borodinski-web.jpg" width="358" height="578" alt="Барбершоп Borodinski">
-                <p class="hidden">
+                <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Barbershop</a>
                   <span class="hidden-desc">Сайст салона красоты. Для мужчин, да.</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
-                </p>
+                </div>
               </li>
               <li class="catalog-item">
                 <svg class="catalog-svg" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,11 +158,11 @@
                   </g>
                 </svg>
                 <img src="img/models/mishka-web.jpg" width="358" height="578" alt="Магазин Mishka">
-                <p class="hidden">
+                <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Mishka</a>
                   <span class="hidden-desc">Интернет-магазин вязаных игрушек</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
-                </p>
+                </div>
               </li>
               <li class="catalog-item">
                 <svg class="catalog-svg" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -171,11 +171,11 @@
                   </g>
                 </svg>
                 <img src="img/models/aplus-web.jpg" width="358" height="578" alt="Академия Aplus">
-                <p class="hidden">
+                <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">A plus</a>
                   <span class="hidden-desc">Лендинг курсов повышения квалификации</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
-                </p>
+                </div>
               </li>
               <li class="catalog-item">
                 <svg class="catalog-svg" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,33 +184,35 @@
                   </g>
                 </svg>
                 <img src="img/models/kvast-web.jpg" width="358" height="578" alt="Крафтовый квас Kvast">
-                <p class="hidden">
+                <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Кваст</a>
                   <span class="hidden-desc">Промо-сайт производителя крафтового кваса</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
-                </p>
+                </div>
               </li>
             </ul>
             <div class="pagination">
               <ul class="clear-list pagination-list">
-                <li class="paginateion-item">
+                <li class="pagination-item">
                   <a class="btn-link btn-submit">1</a>
                 </li>
-                <li class="paginateion-item">
+                <li class="pagination-item">
                   <a class="btn-link btn-submit" href="#">2</a>
                 </li>
-                <li class="paginateion-item">
+                <li class="pagination-item">
                   <a class="btn-link btn-submit" href="#">3</a>
                 </li>
-                <li class="paginateion-item">
+                <li class="pagination-item">
                   <a href="#" class="btn-link btn-submit">Следующая</a>
                 </li>
               </ul>
             </div>
           </section>
+        </div>   
       </main>
-      <footer>
-          <img src="img/map.png" width="1440" height="416"  alt="Мы на карте города">        
+      <footer class="main-footer">
+        <div class="footer-map">
+          <img class="footer-map-img" src="img/map.png" width="1440" height="416"  alt="Мы на карте города">        
           <div class="footer-contacts">
             <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>   
             <address class="contacts-address">   
@@ -218,7 +220,9 @@
               тел. <a href="tel:+78122757575" class="footer-phone">+7 (812) 275-75-75</a>
               <a href="#" class="btn btn-red">Напишите нам</a>
             </address>
-          </div>        
+          </div>
+        </div>
+        <div class="footer-wrap container">      
           <section class="footer-socials">
             <ul class="clear-list socials-list">
               <li class="socials-item">              
@@ -247,12 +251,13 @@
                     </svg>
                   </div>
                 </a>              
-            </li>
+              </li>
             </ul>
-            <div class="footer-text">
-              <p class="footer-slogan">Давайте дружить, это выгодно!</p>
-              <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
-            </div>
-          </section>
+          </section>          
+          <div class="footer-text">
+            <p class="footer-slogan">Давайте дружить, это выгодно!</p>
+            <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>  
       </footer>    
     </body>
