@@ -103,14 +103,16 @@ img {
 }
 
 .catalog {
-    margin-left: 110px;
+    margin-left: 140px;
     margin-right: 0px;
+    padding-right: 0px;
 }
 
 .sorting {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 110px;
+    grid-template-columns: 1fr 1fr;    
+    margin-left: 140px;
+    
 }
 
 .filter {
@@ -120,6 +122,7 @@ img {
 .catalog-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
 }
 
 .partners {
@@ -129,7 +132,7 @@ img {
     padding-bottom: 44px;
     align-items: center;
     border-bottom: 2px solid var(--light-grey);
-    margin-left: 30px;
+    padding-left: 30px;
 }
 
 /* Header */
@@ -154,12 +157,10 @@ img {
     color: var(--basic-black);
 }
 
-.navbar-list {
+.navbar .navbar-list {    
     display: flex;
     max-width: 437px;
     justify-content: space-between;
-}
-.navbar .navbar-list {    
     margin-left: 200px;
 }
 
@@ -417,9 +418,10 @@ img {
 
 /* Footer */
 
+/* Map */
 .footer-map {
     position: relative;
-    margin-bottom: 68px;
+    margin-bottom: 65px;
 }
 
 .footer-map-img {
@@ -428,12 +430,21 @@ img {
     margin-right: auto;
     margin-top: 80px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px;    
 }
 
 .footer-contacts {
+    position: absolute;
     background-color: var(--basic-white);
-    max-width: 319px; 
+    width: 319px;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-581px);
+    -webkit-transform: translateX(-581px);
+    -moz-transform: translateX(-581px);
+    -ms-transform: translateX(-581px);
+    -o-transform: translateX(-581px);
+    padding: 0px;
 }
 
 .contacts-title {    
@@ -464,6 +475,8 @@ img {
 .footer-wrap {
     display: flex;
 }
+
+/* Socials */
 
 .socials-link {
     display: flex;    
@@ -506,6 +519,7 @@ img {
 .footer-text {
     margin-left: 130px;
     margin-bottom: 54px;
+    padding-top: 5px;
 }
 
 .footer-slogan {
@@ -525,6 +539,8 @@ img {
     margin-top: 10px;
 }
 
+/* Catalog */
+
 .catalog-title {
     background-color: var(--light-grey);
     font-style: normal;
@@ -533,7 +549,12 @@ img {
     line-height: 55px;
     text-align: center;
     margin-top: 0;
+    padding-top: 77px;
+    padding-bottom: 98px;
+    margin-bottom: 55px;
 }
+
+/* Filter */
 
 .filter-legend {
     font-style: normal;
@@ -543,6 +564,54 @@ img {
     text-transform: uppercase;
     color: var(--basic-black);
     margin-top: 0;
+}
+
+.filter-legend-cost {
+    margin-bottom: 48px;
+}
+
+.filter-legend-grid {
+    margin-bottom: 5px;
+}
+
+.filter-range {
+    width: 205px;
+    margin-left: 20px;
+    margin-right: 22px;
+}
+
+.filter-cost-from::-webkit-outer-spin-button,
+.filter-cost-from::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Убираем стрелочки - все, кроме firefox */
+    margin: 0;
+}
+
+.filter-cost-from {
+    -moz-appearance:textfield; /* Убираем стрелочки - все, кроме firefox */
+    background-color: var(--light-grey);
+    border: none;
+}
+
+.filter-cost-from {
+    width: 72px;
+    height: 32px;
+    text-align: center;
+    color: var(--basik-dark);    
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.filter-cost-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-cost-inner-wrap {
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
 }
 
 .filter-cost-text {
@@ -557,9 +626,32 @@ img {
     color: var(--basik-dark);
 }
 
+.filter-grid-list,
+.filter-features-list {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--basik-dark);
+}
+
+.filter-grid-item:not(:nth-last-of-type(1)) {
+    margin-bottom: 15px;
+}
+
+.filter-grid-item:nth-last-of-type(1) {
+    margin-bottom: 30px;
+}
+
 .filter-checkbox:disabled,
 .filter-radio:disabled {
     opacity: 0.3;
+}
+
+.filter-features-item:not(:nth-last-of-type(1)) {
+    margin-bottom: 10px;
+}
+
+.filter-features-item:nth-last-of-type(1) {
+    margin-bottom: 30px;
 }
 
 .filter-fieldset {
@@ -568,7 +660,9 @@ img {
 
 .btn-submit {
     color: var(--basic-black);
-    background-color: var(--light-grey);    
+    background-color: var(--light-grey);
+    padding-left: 88px;
+    padding-right: 89px;
 }
 
 .btn-submit:hover,
@@ -581,11 +675,13 @@ img {
     box-shadow: inset 0px 3px 0px var(--basic-shadow-alpha);    
     color: var(--basic-black-alpha);
 }
+/* Сортировка */
 
 .sorting-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 20px;
 }
 
 .sorting-link {
@@ -622,6 +718,8 @@ img {
     fill: var(--sorting-black);
 }
 
+/* Каталог товаров */
+
 .catalog-item {    
     display: flex;
     flex-direction: column;
@@ -633,6 +731,10 @@ img {
     fill-opacity: 0.12;
 }
 
+.catalog-picture {
+    align-self: center;
+}
+
 .catalog-item:focus .catalog-svg,
 .catalog-item:hover .catalog-svg {
     fill: var(--basic-grey);
@@ -641,7 +743,8 @@ img {
 
 .hidden {   
     display: none; 
-    background-color: var(--light-grey);    
+    background-color: var(--light-grey);
+    width: 360px;
 }
 
 .hidden-link {
@@ -651,12 +754,26 @@ img {
     line-height: 30px;
     color: var(--basic-black);
     text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    text-align: center;
 }
 
 .hidden-desc {
     font-style: normal;
     line-height: 18px;
     color: var(--dim-grey);
+    max-width: 255px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;    
+    text-align: center;
+}
+
+.hidden .btn-red {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 44px;
 }
 
 .hidden .btn-red:active {
@@ -667,7 +784,14 @@ img {
 .catalog-item:focus .hidden {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    position: absolute;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateY(389px);
+    -webkit-transform: translateY(389px);
+    -moz-transform: translateY(389px);
+    -ms-transform: translateY(389px);
+    -o-transform: translateY(389px);
 }
 
 .pagination a:not([href]) {
@@ -683,8 +807,34 @@ img {
 .pagination-list {
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.btn-link {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    border-radius: 3px;
+    background-color: var(--light-grey);
+}
+
+.btn-next {
+    padding-left: 78px;
+    padding-right: 77px;
 }
 
 .pagination-item {
     margin-right: 11px;
+}
+
+.catalog-footer .footer-map-img {
+    margin-top: 70px;
 }

@@ -13,22 +13,20 @@
       </head>
     <body class="page-body">
       <header class="main-header">
-        <nav class="navbar">
-          <div class="navbar-wrap"> 
+        <nav class="navbar navbar-wrap">          
             <a class="navbar-logo" href="index.html">
               <img class="logo-img" src="img/logo.svg" width="160" height="66" alt="Логотип сайта">
             </a>              
             <ul class="navbar-list clear-list">
-              <li><a class="navbar-link" href="#">Студия</a></li>
-              <li><a class="navbar-link" href="#">Клиенты</a></li>
-              <li><a class="navbar-link">Магазин</a></li>
-              <li><a class="navbar-link" href="#">Контакты</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Студия</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Клиенты</a></li>
+              <li class="navbar-item"><a class="navbar-link">Магазин</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Контакты</a></li>
             </ul>        
             <div class="navbar-cart">
               <a href="#" class="navbar-link navbar-cartlink">Корзина</a>
-            </div>
-          </div> 
-        </nav>  
+            </div>          
+        </nav>    
       </header>
       <main class="page-catalog">
         <h1 class="catalog-title">Магазин готовых шаблонов</h1>
@@ -36,15 +34,21 @@
           <section class="filter">                
             <form method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter-cost filter-fieldset">
-                <legend class="filter-legend">Стоимость:</legend>
+                <legend class="filter-legend filter-legend-cost">Стоимость:</legend>
                   <input class="filter-range" type="range" min="0" max="15000" step="100" name="filter-cost" id="filter-cost">
-                  <label class="filter-cost-text" for="cost-from">От</label> 
-                  <input class="filter-cost-from" type="text" name="cost-from" id="cost-from" placeholder="0"> 
-                  <label class="filter-cost-text" for="cost-to">До</label> 
-                  <input class="filter-cost-from" type="text" name="cost-to" id="cost-to" placeholder="15000">
+                <div class="filter-cost-wrap">
+                  <div class="filter-cost-inner-wrap">
+                    <label class="filter-cost-text" for="cost-from">От</label> 
+                    <input class="filter-cost-from" type="number" name="cost-from" id="cost-from" min="0" max="14999" placeholder="0">
+                  </div>
+                  <div class="filter-cost-inner-wrap"> 
+                    <label class="filter-cost-text" for="cost-to">До</label> 
+                    <input class="filter-cost-from" type="number" name="cost-to" id="cost-to" min="1" max="15000" placeholder="15000">
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filter-grid filter-fieldset">
-                <legend class="filter-legend">Сетка:</legend>
+                <legend class="filter-legend filter-legend-grid">Сетка:</legend>
                 <ul class="clear-list filter-grid-list">
                   <li class="filter-grid-item">
                     <input class="filter-radio" type="radio" name="grid" value="responsive" id="filter-responsive" checked>
@@ -118,10 +122,10 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1793 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1793 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1903 25.6658 39.9398 23.5C38.6894 21.3342 38.6894 18.6658 39.9398 16.5C41.1903 14.3342 43.5011 13 46.002 13C49.868 13 53.002 16.134 53.002 20C53.002 23.866 49.868 27 46.002 27ZM62.9508 23.5C64.2013 25.6658 66.5121 27 69.013 27C72.879 27 76.013 23.866 76.013 20C76.013 16.134 72.879 13 69.013 13C66.5121 13 64.2013 14.3342 62.9508 16.5C61.7004 18.6658 61.7004 21.3342 62.9508 23.5Z"/>
                   </g>
                 </svg>
-                <img src="img/models/sedona-web.jpg" width="358" height="578" alt="Туристический сайт Седона">
+                <img class="catalog-picture" src="img/models/sedona-web.jpg" width="358" height="578" alt="Туристический сайт Седона">
                 <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Sedona</a>
-                  <span class="hidden-desc">Информационный сайт для туристов</span>
+                  <span class="hidden-desc">Информационный сайт<br> для туристов</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
                 </div>
               </li>
@@ -131,10 +135,10 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1793 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1793 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1903 25.6658 39.9398 23.5C38.6894 21.3342 38.6894 18.6658 39.9398 16.5C41.1903 14.3342 43.5011 13 46.002 13C49.868 13 53.002 16.134 53.002 20C53.002 23.866 49.868 27 46.002 27ZM62.9508 23.5C64.2013 25.6658 66.5121 27 69.013 27C72.879 27 76.013 23.866 76.013 20C76.013 16.134 72.879 13 69.013 13C66.5121 13 64.2013 14.3342 62.9508 16.5C61.7004 18.6658 61.7004 21.3342 62.9508 23.5Z"/>
                   </g>
                 </svg>
-                <img src="img/models/pink-web.jpg" width="358" height="578" alt="Приложения Pink">
+                <img class="catalog-picture" src="img/models/pink-web.jpg" width="358" height="578" alt="Приложения Pink">
                 <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Pink App</a>
-                  <span class="hidden-desc">Продуктовый лендинг для iOS и Android</span>
+                  <span class="hidden-desc">Продуктовый лендинг приложения для iOS и Android</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
                 </div>
               </li>
@@ -144,10 +148,10 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1793 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1793 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1903 25.6658 39.9398 23.5C38.6894 21.3342 38.6894 18.6658 39.9398 16.5C41.1903 14.3342 43.5011 13 46.002 13C49.868 13 53.002 16.134 53.002 20C53.002 23.866 49.868 27 46.002 27ZM62.9508 23.5C64.2013 25.6658 66.5121 27 69.013 27C72.879 27 76.013 23.866 76.013 20C76.013 16.134 72.879 13 69.013 13C66.5121 13 64.2013 14.3342 62.9508 16.5C61.7004 18.6658 61.7004 21.3342 62.9508 23.5Z"/>
                   </g>
                 </svg>                   
-                <img src="img/models/borodinski-web.jpg" width="358" height="578" alt="Барбершоп Borodinski">
+                <img class="catalog-picture" src="img/models/borodinski-web.jpg" width="358" height="578" alt="Барбершоп Borodinski">
                 <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Barbershop</a>
-                  <span class="hidden-desc">Сайст салона красоты. Для мужчин, да.</span>
+                  <span class="hidden-desc">Сайст салона красоты.<br> Для мужчин, да.</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
                 </div>
               </li>
@@ -157,10 +161,10 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1793 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1793 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1903 25.6658 39.9398 23.5C38.6894 21.3342 38.6894 18.6658 39.9398 16.5C41.1903 14.3342 43.5011 13 46.002 13C49.868 13 53.002 16.134 53.002 20C53.002 23.866 49.868 27 46.002 27ZM62.9508 23.5C64.2013 25.6658 66.5121 27 69.013 27C72.879 27 76.013 23.866 76.013 20C76.013 16.134 72.879 13 69.013 13C66.5121 13 64.2013 14.3342 62.9508 16.5C61.7004 18.6658 61.7004 21.3342 62.9508 23.5Z"/>
                   </g>
                 </svg>
-                <img src="img/models/mishka-web.jpg" width="358" height="578" alt="Магазин Mishka">
+                <img class="catalog-picture" src="img/models/mishka-web.jpg" width="358" height="578" alt="Магазин Mishka">
                 <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Mishka</a>
-                  <span class="hidden-desc">Интернет-магазин вязаных игрушек</span>
+                  <span class="hidden-desc">Интернет-магазин<br> вязаных игрушек</span>
                   <button type="button" class="btn btn-red">9 900 ₽</button>
                 </div>
               </li>
@@ -170,7 +174,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1793 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1793 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1903 25.6658 39.9398 23.5C38.6894 21.3342 38.6894 18.6658 39.9398 16.5C41.1903 14.3342 43.5011 13 46.002 13C49.868 13 53.002 16.134 53.002 20C53.002 23.866 49.868 27 46.002 27ZM62.9508 23.5C64.2013 25.6658 66.5121 27 69.013 27C72.879 27 76.013 23.866 76.013 20C76.013 16.134 72.879 13 69.013 13C66.5121 13 64.2013 14.3342 62.9508 16.5C61.7004 18.6658 61.7004 21.3342 62.9508 23.5Z"/>
                   </g>
                 </svg>
-                <img src="img/models/aplus-web.jpg" width="358" height="578" alt="Академия Aplus">
+                <img class="catalog-picture" src="img/models/aplus-web.jpg" width="358" height="578" alt="Академия Aplus">
                 <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">A plus</a>
                   <span class="hidden-desc">Лендинг курсов повышения квалификации</span>
@@ -183,7 +187,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1793 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1793 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1903 25.6658 39.9398 23.5C38.6894 21.3342 38.6894 18.6658 39.9398 16.5C41.1903 14.3342 43.5011 13 46.002 13C49.868 13 53.002 16.134 53.002 20C53.002 23.866 49.868 27 46.002 27ZM62.9508 23.5C64.2013 25.6658 66.5121 27 69.013 27C72.879 27 76.013 23.866 76.013 20C76.013 16.134 72.879 13 69.013 13C66.5121 13 64.2013 14.3342 62.9508 16.5C61.7004 18.6658 61.7004 21.3342 62.9508 23.5Z"/>
                   </g>
                 </svg>
-                <img src="img/models/kvast-web.jpg" width="358" height="578" alt="Крафтовый квас Kvast">
+                <img class="catalog-picture" src="img/models/kvast-web.jpg" width="358" height="578" alt="Крафтовый квас Kvast">
                 <div class="hidden">
                   <a class="hidden-link navbar-link" href="#">Кваст</a>
                   <span class="hidden-desc">Промо-сайт производителя крафтового кваса</span>
@@ -194,32 +198,32 @@
             <div class="pagination">
               <ul class="clear-list pagination-list">
                 <li class="pagination-item">
-                  <a class="btn-link btn-submit">1</a>
+                  <a class="btn-link">1</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="btn-link btn-submit" href="#">2</a>
+                  <a class="btn-link" href="#">2</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="btn-link btn-submit" href="#">3</a>
+                  <a class="btn-link" href="#">3</a>
                 </li>
                 <li class="pagination-item">
-                  <a href="#" class="btn-link btn-submit">Следующая</a>
+                  <a class="btn-link btn-next" href="#">Следующая</a>
                 </li>
               </ul>
             </div>
           </section>
         </div>   
       </main>
-      <footer class="main-footer">
+      <footer class="catalog-footer">
         <div class="footer-map">
           <img class="footer-map-img" src="img/map.png" width="1440" height="416"  alt="Мы на карте города">        
           <div class="footer-contacts">
             <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>   
             <address class="contacts-address">   
               191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
-              тел. <a href="tel:+78122757575" class="footer-phone">+7 (812) 275-75-75</a>
-              <a href="#" class="btn btn-red">Напишите нам</a>
+              <a href="tel:+78122757575" class="footer-phone">тел. +7 (812) 275-75-75</a>              
             </address>
+            <a href="#" class="btn btn-red">Напишите нам</a>
           </div>
         </div>
         <div class="footer-wrap container">      
@@ -259,5 +263,5 @@
             <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>  
-      </footer>    
+      </footer>
     </body>
