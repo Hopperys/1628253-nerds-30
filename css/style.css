@@ -111,8 +111,7 @@ img {
 .sorting {
     display: grid;
     grid-template-columns: 1fr 1fr;    
-    margin-left: 140px;
-    
+    margin-left: 140px;    
 }
 
 .filter {
@@ -123,6 +122,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
+    row-gap: 30px;
 }
 
 .partners {
@@ -430,7 +430,7 @@ img {
     margin-right: auto;
     margin-top: 80px;
     padding-left: 10px;
-    padding-right: 10px;    
+    padding-right: 10px;
 }
 
 .footer-contacts {
@@ -438,13 +438,8 @@ img {
     background-color: var(--basic-white);
     width: 319px;
     top: 54px;
-    left: 50%;
+    left: 50%;    
     transform: translateX(-581px);
-    -webkit-transform: translateX(-581px);
-    -moz-transform: translateX(-581px);
-    -ms-transform: translateX(-581px);
-    -o-transform: translateX(-581px);
-    padding: 0px;
 }
 
 .contacts-title {    
@@ -587,7 +582,7 @@ img {
 }
 
 .filter-cost-from {
-    -moz-appearance:textfield; /* Убираем стрелочки - все, кроме firefox */
+    -moz-appearance:textfield; /* Убираем стрелочки firefox */
     background-color: var(--light-grey);
     border: none;
 }
@@ -633,12 +628,12 @@ img {
     color: var(--basik-dark);
 }
 
-.filter-grid-item:not(:nth-last-of-type(1)) {
+.filter-grid-item {
     margin-bottom: 15px;
 }
 
-.filter-grid-item:nth-last-of-type(1) {
-    margin-bottom: 30px;
+.filter-grid-item:last-child {
+    margin-bottom: 20px;
 }
 
 .filter-checkbox:disabled,
@@ -646,11 +641,11 @@ img {
     opacity: 0.3;
 }
 
-.filter-features-item:not(:nth-last-of-type(1)) {
+.filter-features-item {
     margin-bottom: 10px;
 }
 
-.filter-features-item:nth-last-of-type(1) {
+.filter-features-item:last-child {
     margin-bottom: 30px;
 }
 
@@ -675,11 +670,11 @@ img {
     box-shadow: inset 0px 3px 0px var(--basic-shadow-alpha);    
     color: var(--basic-black-alpha);
 }
+
 /* Сортировка */
 
 .sorting-list {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-left: 20px;
 }
@@ -721,18 +716,20 @@ img {
 /* Каталог товаров */
 
 .catalog-item {    
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+    display: block;
+    margin-bottom: -7px;
+    position: relative;
 }
 
 .catalog-svg {
     fill: var(--basic-grey);
     fill-opacity: 0.12;
+    margin-bottom: -7px;
 }
 
 .catalog-picture {
-    align-self: center;
+    display: block;
+    margin: auto;
 }
 
 .catalog-item:focus .catalog-svg,
@@ -744,10 +741,15 @@ img {
 .hidden {   
     display: none; 
     background-color: var(--light-grey);
-    width: 360px;
+    width: 360px;    
+    position: absolute;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    bottom: 0px;
 }
 
 .hidden-link {
+    display: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -756,10 +758,11 @@ img {
     text-transform: uppercase;
     margin-top: 25px;
     margin-bottom: 12px;
-    text-align: center;
+    text-align: center;    
 }
 
 .hidden-desc {
+    display: inherit;
     font-style: normal;
     line-height: 18px;
     color: var(--dim-grey);
@@ -774,6 +777,8 @@ img {
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 44px;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .hidden .btn-red:active {
@@ -782,33 +787,23 @@ img {
 
 .catalog-item:hover .hidden,
 .catalog-item:focus .hidden {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transform: translateY(389px);
-    -webkit-transform: translateY(389px);
-    -moz-transform: translateY(389px);
-    -ms-transform: translateY(389px);
-    -o-transform: translateY(389px);
+    display: block;
 }
 
 .pagination a:not([href]) {
     background-color: var(--white-link-alfa);
-    border: 3px solid var(--white-border);
+    border: 3px solid var(--white-border);    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
     border-radius: 3px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
 }
 
 .pagination-list {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 0px;
+    display: flex;    
+    margin-top: 76px;
+    margin-bottom: 2px;
 }
 
 .btn-link {
