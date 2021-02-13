@@ -272,11 +272,7 @@ img {
     justify-content: space-between;
     width: 88px;    
     bottom: 96px;
-    left: 50%;    
-    -webkit-transform: translateX(-42px);
-    -moz-transform: translateX(-42px);
-    -ms-transform: translateX(-42px);
-    -o-transform: translateX(-42px);
+    left: 50%;
     transform: translateX(-42px);
 }
 
