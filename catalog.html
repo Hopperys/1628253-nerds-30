@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Нёрдс</title>
         <link rel="icon" href="favicon.ico">
-        <link rel="icon" href="img/icons/icon.svg" type="image/svg+×ml">
+        <link rel="icon" href="img/icons/icon.svg">
         <link rel="apple-touch-icon" href="img/icons/180.png">
         <link rel="manifest" href="manifest.webmanifest">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
@@ -31,29 +31,26 @@
       <main class="page-catalog">
         <h1 class="catalog-title">Магазин готовых шаблонов</h1>
         <div class="container catalog-wrap">                   
-          <section class="filter">                
+          <section class="filter">
+            <h2 class="visually-hidden">Фильтр товаров</h2>              
             <form method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter-cost filter-fieldset">                
                 <legend class="filter-legend filter-legend-cost">Стоимость:</legend>
                 <div class="filter-range">
-                <div class="range-controls">
+                  <div class="range-controls">
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
                     <div class="toggle toggle-min" tabindex="0"></div>
                     <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
-                <div class="filter-cost-wrap">
-                  <div class="filter-cost-inner-wrap">
-                    <label class="filter-cost-text" for="cost-from">От</label>
-                    <input class="filter-cost-from" type="number" name="cost-from" id="cost-from" min="0" max="14999" placeholder="0">
-                  </div>
-                  <div class="filter-cost-inner-wrap"> 
-                    <label class="filter-cost-text" for="cost-to">До</label> 
-                    <input class="filter-cost-from" type="number" name="cost-to" id="cost-to" min="1" max="15000" placeholder="15000">
+                  <div class="filter-cost-wrap">
+                      <label class="filter-cost-text" for="cost-from">От</label>
+                      <input class="filter-cost-from" type="number" name="cost-from" id="cost-from" min="0" max="14999" placeholder="0">
+                      <label class="filter-cost-text" for="cost-to">До</label> 
+                      <input class="filter-cost-from filter-cost-to" type="number" name="cost-to" id="cost-to" min="1" max="15000" placeholder="15 000">
                   </div>
                 </div>
-              </div>
               </fieldset>
               <fieldset class="filter-grid filter-fieldset">
                 <legend class="filter-legend filter-legend-grid">Сетка:</legend>
@@ -89,7 +86,7 @@
                   </li>
                   <li class="filter-features-item">
                     <input class="visually-hidden filter-checkbox" type="checkbox" name="features" value="gallery" id="filter-gallery">
-                    <label class="filter-text checkbox-label" for="filter-gallery">Галлерея</label>
+                    <label class="filter-text checkbox-label" for="filter-gallery">Галерея</label>
                   </li>
                   <li class="filter-features-item">
                     <input class="visually-hidden filter-checkbox" type="checkbox" name="features" value="cart" id="filter-cart">
@@ -111,7 +108,9 @@
                   <svg class="sorting-svg" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.5 10L0 0H11"/>
                   </svg>
-                </a>              
+                </a>
+              </li>
+              <li class="sortink-item">
                 <a href="#" class="sorting-up">
                   <svg class="sorting-svg" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g>
@@ -119,10 +118,11 @@
                     </g>
                   </svg>
                 </a>
-              </li>
+              </li>          
             </ul>
           </section>
-          <section class="catalog">                
+          <section class="catalog">
+            <h2 class="visually-hidden">Список наших товаров</h2>              
             <ul class="clear-list catalog-list">
               <li class="catalog-item">
                 <svg class="catalog-svg" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -236,6 +236,7 @@
         </div>
         <div class="footer-wrap container">      
           <section class="footer-socials">
+            <h2 class="visually-hidden">Наши соц.сети</h2>  
             <ul class="clear-list socials-list">
               <li class="socials-item">              
                 <a href="#" class="socials-link">
