@@ -931,6 +931,30 @@ img {
     margin-left: -20px;
 }
 
+.filter-cost-from::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--basik-dark);
+}
+
+.filter-cost-from::-moz-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--basik-dark);
+}
+
+.filter-cost-from:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--basik-dark);
+}
+
+.filter-cost-from::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--basik-dark);
+}
+
 .filter-cost-from::placeholder {
     font-size: 16px;
     line-height: 22px;
@@ -1140,7 +1164,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 2px;
 }
 
@@ -1150,17 +1175,24 @@ img {
 }
 
 .sorting-down {
-    margin-left: 40px;
+    margin-left: 38px;
 }
 
 .sorting-up {
     margin-left: 16px;
 }
 
+.sortink-item .sorting-current {
+    opacity: 1;
+}
+
+.sortink-item .sorting-current:hover,
+.sortink-item .sorting-current:focus {
+    opacity: 1;
+}
+
 .sorting-link {
     text-decoration: none;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-black);
@@ -1178,7 +1210,7 @@ img {
 }
 
 .sorting-svg {
-    opacity: 0.2;
+    opacity: 0.2;    
     fill: var(--sorting-grey)
 }
 
@@ -1189,6 +1221,11 @@ img {
 
 .sorting-svg:active {
     fill: var(--sorting-black);
+}
+
+.sorting-svg-current {
+    opacity: 1;
+    fill: var(--basic-black);
 }
 
 /* Каталог товаров */
@@ -1332,7 +1369,9 @@ img {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: var(--basic-black);
     background-color: var(--basic-white);
     -webkit-box-shadow: 0 20px 40px var(--popup-shadow);
