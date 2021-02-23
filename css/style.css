@@ -688,11 +688,10 @@ img {
 
 .footer-map-map {
     display: block;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .footer-contacts {
