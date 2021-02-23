@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
       <header class="main-header">
@@ -33,7 +33,7 @@
         <section class="slider">
           <h2 class="visually-hidden">Информация о нас</h2>
           <div class="slide-one slide slide-current">
-            <h2 class="slider-title">Долго, дорого, скурпулезно.</h2>
+            <h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
             <p class="slider-text text-desc">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>          
             <a href="#" class="btn btn-red">Узнать больше</a>
           </div>
@@ -48,9 +48,9 @@
             <a href="#" class="btn btn-red">Узнать больше</a>
           </div>
           <div class="slider-controls">
-            <button class="slider-btn current" type="button" aria-label="Первый слайд"></button>
-            <button class="slider-btn" type="button" aria-label="Второй слайд"></button>
-            <button class="slider-btn" type="button" aria-label="Третий слайд"></button>
+            <button class="slider-btn slider-btn-one current" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-btn slider-btn-two" type="button" aria-label="Второй слайд"></button>
+            <button class="slider-btn slider-btn-three" type="button" aria-label="Третий слайд"></button>
           </div>
         </section>
         <div class="container">
@@ -134,7 +134,7 @@
               191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
               <a href="tel:+78122757575" class="footer-phone">тел. +7 (812) 275-75-75</a>              
             </address>
-            <a href="#" class="btn btn-red">Напишите нам</a>
+            <a href="#" class="btn btn-red feedback-link">Напишите нам</a>
           </div>
         </div>
         <div class="footer-wrap container">          
@@ -176,24 +176,28 @@
           </div>
         </div>  
       </footer>
-      <section class="modal-contact-us">
+      <section class="modal-feedback">
         <h2 class="modal-title">Напишите нам</h2>
-        <form class="modal-intput" action="https://echo.htmlacademy.ru" method="post">
+        <form class="modal-form" action="https://echo.htmlacademy.ru" target="_blank" method="post">
           <div class="modal-name">
             <label class="label-name" for="contact-name">Ваше имя:</label>
-            <input class="contact-us-name contact-us-input" id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+            <input class="feedback-name feedback-input" id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
           </div>
           <div class="modal-email">
             <label class="label-email" for="contact-login">Ваш email:</label>
-            <input class="contact-us-email contact-us-input" id="contact-login" type="email" name="email" placeholder="email@example.com">
+            <input class="feedback-email feedback-input" id="contact-login" type="email" name="email" placeholder="email@example.com">
           </div>
           <div class="modal-message">
             <label class="label-message" for="contact-message">Текст письма:</label>
-            <textarea class="contact-us-message" id="contact-message" name="message" placeholder="В свободной форме"></textarea>
+            <textarea class="feedback-message" id="contact-message" name="message" placeholder="В свободной форме"></textarea>
           </div>
           <button class="btn modal-btn" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </section>
+
+      <script src="js/feedback.js"></script>
+      <script src="js/slider.js"></script>
+      
   </body>
 </html>
