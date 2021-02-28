@@ -24,7 +24,7 @@ feedbackLink.addEventListener("click", function (evt) {
     feedbackEmail.focus();
   } else {
     feedbackName.focus();
-  }  
+  }
 })
 
 feedbackClose.addEventListener("click", function(evt) {
@@ -42,7 +42,7 @@ feedbackForm.addEventListener("submit", function(evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", feedbackName.value);
-    }    
+    }
   }
 })
 
