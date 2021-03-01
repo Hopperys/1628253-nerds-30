@@ -137,6 +137,7 @@ img {
     margin-bottom: 45px;
     padding-bottom: 48px;
     border-bottom: 2px solid var(--light-grey);
+    width: 1160px;
 }
 
 .stats-wrap {
@@ -155,8 +156,8 @@ img {
     display: grid;
     -ms-grid-columns: 260px 1fr;
     grid-template-columns: 260px 1fr;
-    -ms-grid-rows: 60px 1fr;
-    grid-template-rows: 60px 1fr;
+    -ms-grid-rows: auto 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 .catalog-wrap > *:nth-child(1) {
@@ -183,7 +184,7 @@ img {
     margin-left: 140px;
     margin-right: 0;
     padding-right: 0;
-    margin-top: 18px;
+    margin-top: 30px;
 }
 
 .sorting {
@@ -218,6 +219,7 @@ img {
        -moz-column-gap: 40px;
             column-gap: 40px;
     border-bottom: 2px solid var(--light-grey);
+    width: 1160px;
 }
 
 /* Header */
@@ -505,10 +507,6 @@ img {
 
 /* Information */
 
-.column-order-link {
-    padding-left: 39px;
-}
-
 .column-title {
     font-style: normal;
     font-weight: 700;
@@ -638,6 +636,7 @@ img {
     border-right: 2px solid var(--light-grey);
     margin-top: 64px;
     margin-bottom: 64px;
+    margin-right: -21px;
 }
 
 .partners-academy {
@@ -656,10 +655,6 @@ img {
 .partners-pink {
     margin-top: 2px;
     padding-left: 39px;
-}
-
-.partners-link {
-    margin-right: -21px;
 }
 
 .partners-mishka {
@@ -853,6 +848,8 @@ img {
     text-transform: uppercase;
     color: var(--basic-black);
     margin-top: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .filter-range {
@@ -921,7 +918,8 @@ img {
 
 .filter-cost-from {
     width: 76px;
-    height: 36px;
+    padding-top: 9px;
+    padding-bottom: 10px;
     text-align: center;
     border-radius: 3px;
     -moz-appearance: textfield;
@@ -941,6 +939,7 @@ img {
     font-size: 16px;
     line-height: 22px;
     color: var(--basik-dark);
+    opacity: 1;
 }
 
 .filter-cost-from:-ms-input-placeholder {
